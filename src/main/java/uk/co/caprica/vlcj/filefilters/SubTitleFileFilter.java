@@ -25,7 +25,7 @@ package uk.co.caprica.vlcj.filefilters;
 public class SubTitleFileFilter extends ExtensionFileFilter {
 
     /**
-     * From the vlc_interfaces.h include file.
+     * From the vlc_interface.h include file.
      */
     private static final String[] EXTENSIONS_SUBTITLE = {
         "cdg",
@@ -39,6 +39,7 @@ public class SubTitleFileFilter extends ExtensionFileFilter {
         "jss",
         "psb",
         "rt",
+        "sami",
         "smi",
         "txt",
         "smil",
@@ -48,7 +49,11 @@ public class SubTitleFileFilter extends ExtensionFileFilter {
         "pjs",
         "mpl2",
         "mks",
-        "vtt"
+        "vtt",
+        "tt",
+        "ttml",
+        "dfxp",
+        "scc"
     };
 
     /**
