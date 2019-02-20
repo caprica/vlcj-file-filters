@@ -28,7 +28,7 @@
 
     <name>vlcj file filters</name>
     <description>FileFilter implementations for file-types supported by vlcj.</description>
-    <url>http://capricasoftware.co.uk/#/projects/vlcj</url>
+    <url>http://capricasoftware.co.uk/projects/vlcj</url>
     <inceptionYear>2009</inceptionYear>
 
     <packaging>jar</packaging>
