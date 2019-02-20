@@ -24,7 +24,7 @@
 
     <groupId>uk.co.caprica</groupId>
     <artifactId>vlcj-file-filters</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>vlcj file filters</name>
     <description>FileFilter implementations for file-types supported by vlcj.</description>
