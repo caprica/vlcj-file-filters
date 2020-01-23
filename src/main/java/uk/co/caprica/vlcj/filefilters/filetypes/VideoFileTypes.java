@@ -38,6 +38,7 @@ final public class VideoFileTypes {
         "bik",
         "bin",
         "crf",
+        "dav",
         "divx",
         "drc",
         "dv",

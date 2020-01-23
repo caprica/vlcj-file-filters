@@ -46,6 +46,8 @@ final public class AudioFileTypes {
         "awb",
         "caf",
         "dts",
+        "dsf",
+        "dff",
         "flac",
         "it",
         "kar",
