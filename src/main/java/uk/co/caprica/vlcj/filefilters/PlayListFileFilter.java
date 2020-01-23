@@ -19,32 +19,12 @@
 
 package uk.co.caprica.vlcj.filefilters;
 
+import static uk.co.caprica.vlcj.filefilters.filetypes.PlayListFileTypes.playListFileTypes;
+
 /**
  * File filter implementation for play-list files recognised by libvlc.
  */
 public class PlayListFileFilter extends ExtensionFileFilter {
-
-    /**
-     * From the vlc_interfaces.h include file.
-     */
-    private static final String[] EXTENSIONS_PLAYLIST = {
-        "asx",
-        "b4s",
-        "cue",
-        "ifo",
-        "m3u",
-        "m3u8",
-        "pls",
-        "ram",
-        "rar",
-        "sdp",
-        "vlc",
-        "xspf",
-        "wax",
-        "wvx",
-        "zip",
-        "conf"
-    };
 
     /**
      * Single instance.
@@ -55,6 +35,6 @@ public class PlayListFileFilter extends ExtensionFileFilter {
      * Create a new file filter.
      */
     public PlayListFileFilter() {
-        super(EXTENSIONS_PLAYLIST);
+        super(playListFileTypes());
     }
 }

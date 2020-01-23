@@ -19,73 +19,12 @@
 
 package uk.co.caprica.vlcj.filefilters;
 
+import static uk.co.caprica.vlcj.filefilters.filetypes.AudioFileTypes.audioFileTypes;
+
 /**
  * File filter implementation for audio files recognised by libvlc.
  */
 public class AudioFileFilter extends ExtensionFileFilter {
-
-    /**
-     * From the vlc_interface.h include file.
-     */
-    private static final String[] EXTENSIONS_AUDIO = {
-        "3ga",
-        "669",
-        "a52",
-        "aac",
-        "ac3",
-        "adt",
-        "adts",
-        "aif",
-        "aifc",
-        "aiff",
-        "amb",
-        "amr",
-        "aob",
-        "ape",
-        "au",
-        "awb",
-        "caf",
-        "dts",
-        "flac",
-        "it",
-        "kar",
-        "m4a",
-        "m4b",
-        "m4p",
-        "m5p",
-        "mid",
-        "mka",
-        "mlp",
-        "mod",
-        "mpa",
-        "mp1",
-        "mp2",
-        "mp3",
-        "mpc",
-        "mpga",
-        "mus",
-        "oga",
-        "ogg",
-        "oma",
-        "opus",
-        "qcp",
-        "ra",
-        "rmi",
-        "s3m",
-        "sid",
-        "spx",
-        "tak",
-        "thd",
-        "tta",
-        "voc",
-        "vqf",
-        "w64",
-        "wav",
-        "wma",
-        "wv",
-        "xa",
-        "xm"
-    };
 
     /**
      * Single instance.
@@ -96,6 +35,6 @@ public class AudioFileFilter extends ExtensionFileFilter {
      * Create a new file filter.
      */
     public AudioFileFilter() {
-        super(EXTENSIONS_AUDIO);
+        super(audioFileTypes());
     }
 }

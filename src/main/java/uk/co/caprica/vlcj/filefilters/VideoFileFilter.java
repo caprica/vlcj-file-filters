@@ -19,82 +19,12 @@
 
 package uk.co.caprica.vlcj.filefilters;
 
+import static uk.co.caprica.vlcj.filefilters.filetypes.VideoFileTypes.videoFileTypes;
+
 /**
  * File filter implementation for video files recognised by libvlc.
  */
 public class VideoFileFilter extends ExtensionFileFilter {
-
-    /**
-     * From the vlc_interface.h include file.
-     */
-    private static final String[] EXTENSIONS_VIDEO = {
-        "3g2",
-        "3gp",
-        "3gp2",
-        "3gpp",
-        "amv",
-        "asf",
-        "avi",
-        "bik",
-        "bin",
-        "crf",
-        "divx",
-        "drc",
-        "dv",
-        "dvr-ms",
-        "evo",
-        "f4v",
-        "flv",
-        "gvi",
-        "gxf",
-        "iso",
-        "m1v",
-        "m2v",
-        "m2t",
-        "m2ts",
-        "m4v",
-        "mkv",
-        "mov",
-        "mp2",
-        "mp2v",
-        "mp4",
-        "mp4v",
-        "mpe",
-        "mpeg",
-        "mpeg1",
-        "mpeg2",
-        "mpeg4",
-        "mpg",
-        "mpv2",
-        "mts",
-        "mtv",
-        "mxf",
-        "mxg",
-        "nsv",
-        "nuv",
-        "ogg",
-        "ogm",
-        "ogv",
-        "ogx",
-        "ps",
-        "rec",
-        "rm",
-        "rmvb",
-        "rpl",
-        "thp",
-        "tod",
-        "tp",
-        "ts",
-        "tts",
-        "txd",
-        "vob",
-        "vro",
-        "webm",
-        "wm",
-        "wmv",
-        "wtv",
-        "xesc"
-    };
 
     /**
      * Single instance.
@@ -105,6 +35,6 @@ public class VideoFileFilter extends ExtensionFileFilter {
      * Create a new file filter.
      */
     public VideoFileFilter() {
-        super(EXTENSIONS_VIDEO);
+        super(videoFileTypes());
     }
 }

@@ -17,24 +17,41 @@
  * Copyright 2009-2020 Caprica Software Limited.
  */
 
-package uk.co.caprica.vlcj.filefilters;
-
-import static uk.co.caprica.vlcj.filefilters.filetypes.SubTitleFileTypes.subTitleFileTypes;
+package uk.co.caprica.vlcj.filefilters.filetypes;
 
 /**
- * File filter implementation for sub-title files recognised by libvlc.
+ * Playlist file types supported by VLC.
  */
-public class SubTitleFileFilter extends ExtensionFileFilter {
+public class PlayListFileTypes {
 
     /**
-     * Single instance.
+     * From the vlc_interfaces.h include file.
      */
-    public static final SubTitleFileFilter INSTANCE = new SubTitleFileFilter();
+    private static final String[] EXTENSIONS_PLAYLIST = {
+        "asx",
+        "b4s",
+        "cue",
+        "ifo",
+        "m3u",
+        "m3u8",
+        "pls",
+        "ram",
+        "rar",
+        "sdp",
+        "vlc",
+        "xspf",
+        "wax",
+        "wvx",
+        "zip",
+        "conf"
+    };
 
     /**
-     * Create a new file filter.
+     * Get the playlist file types supported by VLC.
+     *
+     * @return supported file types
      */
-    public SubTitleFileFilter() {
-        super(subTitleFileTypes());
+    public static String[] playListFileTypes() {
+        return EXTENSIONS_PLAYLIST;
     }
 }
