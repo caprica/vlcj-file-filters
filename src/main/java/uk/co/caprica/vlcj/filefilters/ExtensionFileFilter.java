@@ -50,9 +50,7 @@ public abstract class ExtensionFileFilter implements FileFilter {
         this.extensions = Arrays.copyOf(extensions, extensions.length);
         Arrays.sort(this.extensions);
         // Make a hash-set for faster look-up
-        for(String extension : extensions) {
-            extensionsSet.add(extension);
-        }
+        extensionsSet.addAll(Arrays.asList(extensions));
     }
 
     /**
