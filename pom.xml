@@ -68,6 +68,10 @@
         <url>git@github.com:caprica/vlcj-file-filters.git</url>
     </scm>
 
+    <properties>
+        <module.name>uk.co.caprica.vlcj.filefilters</module.name>
+    </properties>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -122,6 +126,9 @@
                 <version>3.2.0</version>
                 <configuration>
                     <archive>
+                        <manifestEntries>
+                            <Automatic-Module-Name>${module.name}</Automatic-Module-Name>
+                        </manifestEntries>
                         <manifest>
                             <addClasspath>true</addClasspath>
                         </manifest>
