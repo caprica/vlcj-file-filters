@@ -17,7 +17,7 @@
  * Copyright 2009-2020 Caprica Software Limited.
  */
 
-module vlcj.file.filters {
+module uk.co.caprica.vlcj.filefilters {
     requires java.desktop;
 
     exports uk.co.caprica.vlcj.filefilters;
