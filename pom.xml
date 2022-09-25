@@ -18,7 +18,7 @@
 
     <groupId>uk.co.caprica</groupId>
     <artifactId>vlcj-file-filters</artifactId>
-    <version>4.0.1-SNAPSHOT</version>
+    <version>4.0.1</version>
 
     <name>vlcj file filters</name>
     <description>FileFilter implementations for file-types supported by vlcj.</description>
@@ -66,7 +66,7 @@
         <connection>scm:git:git@github.com:caprica/vlcj-file-filters.git</connection>
         <developerConnection>scm:git:git@github.com:caprica/vlcj-file-filters.git</developerConnection>
         <url>git@github.com:caprica/vlcj-file-filters.git</url>
-        <tag>HEAD</tag>
+        <tag>vlcj-file-filters-4.0.1</tag>
     </scm>
 
     <distributionManagement>
